@@ -1,4 +1,50 @@
+.background
+{
+	background-color: purple;
+	color: rgb(210,210,210);
+}
+
 .display
 {
-  background-color: red;
+  height: 200px;
+  width: 400px;
+  text-align: center;
+  font-size:150px ;
+  margin-top: 250px;
+  margin-left: auto;
+  margin-right: auto;
+  border-style: solid;
+  border-width: 10px;
+  border-color: black;
+  background-color: rgb(38, 41, 39);
+  color: rgb(9, 122, 35);
+}
+
+.button
+{
+  height: 100px;
+  width: 200px;
+  text-align: center;
+  font-size:150px ;
+  margin-top: 10px;
+  margin-left: auto;
+  margin-right: auto;
+  background-color: purple;
+  box-shadow: 10px 10px 5px black;
+}
+
+.button:hover
+{
+  height: 100px;
+  width: 200px;
+  text-align: center;
+  font-size: 150px ;
+  margin-top: 10px;
+  margin-left: auto;
+  margin-right: auto;
+  border-style: solid;
+  border-width: 5px;
+  border-color: black;
+  background-color: white;
+  box-shadow: 10px 10px 5px black;
 }
