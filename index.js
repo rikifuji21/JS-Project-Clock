@@ -3,12 +3,14 @@ function startTime() {
 var today = new Date();
 var hours = today.getHours();
 var minutes = today.getMinutes();
+var meridiemhours = today.getHours();
+var meridiem = " AM";
 minutes = checkTime(minutes);
 hours = nonMilitaryTime(hours);
-var blink = 0
+if (meridiemhours >= 12) {meridiem = " PM"}; //if hours is 13+ PM
 document.getElementById('clock').innerHTML =
-blink(blink);
-  var t = setTimeout(startTime, 1);
+hours + ":" + minutes + meridiem;
+var t = setTimeout(startTime, 1);
 }
 
   function checkTime(i) {
@@ -16,19 +18,16 @@ blink(blink);
   return i;
 }
 
+
+
 function nonMilitaryTime(i) {
 	if (12 < i) {i = i - 12}; //subtract 12 if hours are 13+
 	return i;
 }
 
-function blink(i){
-if (i < 1) {nonMilitaryTime(hours) + ":" + checkTime(minutes); let i = 2}
-else if (i = 2) {nonMilitaryTime(hours) + " " + checkTime(minutes); let i = 0};
+document.getElementById("press").onclick = function() {button(10)};
+
+function button(i) {
+if (i < 11) {i = i - 1};
 return i;
-}
-
-document.getElementById("press").onclick = function() {button()};
-
-function button() {
-
 }

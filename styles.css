@@ -7,9 +7,9 @@
 .display
 {
   height: 200px;
-  width: 400px;
+  width: 500px;
   text-align: center;
-  font-size:150px ;
+  font-size:130px ;
   margin-top: 250px;
   margin-left: auto;
   margin-right: auto;
@@ -25,11 +25,12 @@
   height: 100px;
   width: 200px;
   text-align: center;
-  font-size:150px ;
+  font-size:12pt ;
   margin-top: 10px;
   margin-left: auto;
   margin-right: auto;
   background-color: purple;
+  color: purple;
   box-shadow: 10px 10px 5px black;
 }
 
@@ -38,7 +39,7 @@
   height: 100px;
   width: 200px;
   text-align: center;
-  font-size: 150px ;
+  font-size: 12pt ;
   margin-top: 10px;
   margin-left: auto;
   margin-right: auto;
@@ -46,5 +47,23 @@
   border-width: 5px;
   border-color: black;
   background-color: white;
+  color: white;
+  box-shadow: 10px 10px 5px black;
+}
+
+.button:active
+{
+  height: 100px;
+  width: 200px;
+  text-align: center;
+  font-size: 24pt ;
+  margin-top: 10px;
+  margin-left: auto;
+  margin-right: auto;
+  border-style: solid;
+  border-width: 5px;
+  border-color: white;
+  background-color: red;
+  color: black;
   box-shadow: 10px 10px 5px black;
 }
