@@ -10,7 +10,7 @@ hours = nonMilitaryTime(hours);
 if (meridiemhours >= 12) {meridiem = " PM"}; //if hours is 13+ PM
 document.getElementById('clock').innerHTML =
 hours + ":" + minutes + meridiem;
-var t = setTimeout(startTime, 1);
+var t = setTimeout(startTime, 500);
 }
 
   function checkTime(i) {
@@ -18,16 +18,69 @@ var t = setTimeout(startTime, 1);
   return i;
 }
 
-
-
 function nonMilitaryTime(i) {
 	if (12 < i) {i = i - 12}; //subtract 12 if hours are 13+
 	return i;
 }
 
-document.getElementById("press").onclick = function() {button(10)};
-
-function button(i) {
-if (i < 11) {i = i - 1};
-return i;
+var p = document.getElementById("SD");
+	var audio = new Audio('sound/nuke_warning.mp3');
+    var audio2 = new Audio('sound/nuke_explosion.mp3');
+function SD(){
+	alert('What Have You Done....')
+    audio.play();
+    setTimeout(Explosion, 11000)
+function Explosion() {
+	audio2.play();
 }
+}
+
+
+
+/*document.getElementById("timer").onclick = function() {};
+
+var timeleft = 11;
+
+var stime = 0;
+var ctime = 0;
+
+	function convertmsec(m) {
+		var sec = floor(msec / 1000);
+		var msec = m % 1000;
+		return nf(sec,2) + ':' + nf(msec,2);
+	}
+
+var nuke;
+var explosion;
+
+function preload(){
+	nuke = loadSound('sound/nuke_warning.mp3');
+	explosion = loadSound('sound/nuke_explosion.mp3');
+}
+
+function setup() {
+	noCanvas();
+	stime = millis();
+
+	var params = getURLParams();
+  	console.log(params);
+  	if (params.second) {
+    var sec = params.second;
+    timeleft = sec * 1000;
+  }
+
+	var timer = select('#timer');
+	timer.html(convertmsec(timeleft - ctime));
+
+	var interval = setInterval(timeIt, 1);
+
+	function timeIt() {
+		ctime = floor((millis() - stime) / 1000);
+		timer.html(convertmsec(timeleft - ctime);
+		if (ctime == timeleft) {
+			explosion.play();
+			clearInterval(interval);
+		}
+	}
+}
+*/

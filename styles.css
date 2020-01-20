@@ -6,8 +6,8 @@
 
 .display
 {
-  height: 200px;
-  width: 500px;
+  height: 160px;
+  width: 580px;
   text-align: center;
   font-size:130px ;
   margin-top: 250px;
@@ -25,12 +25,14 @@
   height: 100px;
   width: 200px;
   text-align: center;
-  font-size:12pt ;
+  font-size: 12pt ;
   margin-top: 10px;
-  margin-left: auto;
-  margin-right: auto;
-  background-color: purple;
-  color: purple;
+  margin-left: 40%;
+  border-style: solid;
+  border-width: 5px;
+  border-color: white;
+  background-color: black;
+  color: black;
   box-shadow: 10px 10px 5px black;
 }
 
@@ -41,8 +43,7 @@
   text-align: center;
   font-size: 12pt ;
   margin-top: 10px;
-  margin-left: auto;
-  margin-right: auto;
+  margin-left: 40%;
   border-style: solid;
   border-width: 5px;
   border-color: black;
@@ -58,8 +59,7 @@
   text-align: center;
   font-size: 24pt ;
   margin-top: 10px;
-  margin-left: auto;
-  margin-right: auto;
+  margin-left: 40%;
   border-style: solid;
   border-width: 5px;
   border-color: white;
@@ -67,3 +67,19 @@
   color: black;
   box-shadow: 10px 10px 5px black;
 }
+
+/*.date
+{
+  height: 200px;
+  width: 500px;
+  text-align: center;
+  font-size:130px ;
+  margin-top: 250px;
+  margin-left: auto;
+  margin-right: auto;
+  border-style: solid;
+  border-width: 10px;
+  border-color: black;
+  background-color: rgb(38, 41, 39);
+  color: rgb(9, 122, 35);
+}*/
