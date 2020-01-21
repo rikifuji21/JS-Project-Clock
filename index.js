@@ -29,9 +29,47 @@ var p = document.getElementById("SD");
 function SD(){
 	alert('What Have You Done....')
     audio.play();
-    setTimeout(Explosion, 11000)
+    setTimeout(Warning,500);
+    setTimeout(Warning2,1000);
+    setTimeout(Warning,1500);
+    setTimeout(Warning2,2000);
+    setTimeout(Warning,2500);
+    setTimeout(Warning2,3000);
+    setTimeout(Warning,3500);
+    setTimeout(Warning2,4000);
+    setTimeout(Warning,4500);
+    setTimeout(Warning2,5000);
+    setTimeout(Warning,5500);
+    setTimeout(Warning2,6000);
+    setTimeout(Warning,6500);
+    setTimeout(Warning2,7000);
+    setTimeout(Warning,7500);
+    setTimeout(Warning2,8000);
+    setTimeout(Warning,8500);
+    setTimeout(Warning2,9000);
+    setTimeout(Warning,9500);
+    setTimeout(Warning2,10000);
+    setTimeout(Warning,10500);
+    setTimeout(Explosion, 11000);
+
+function Warning() {
+	document.body.style.backgroundColor = "#ffff00"
+	document.body.style.backgroundImage = "url('images/warning.png')";
+}
+
+function Warning2() {
+	document.body.style.backgroundColor = "#ffff00"
+	document.body.style.backgroundImage = "url('images/warning2.png')";
+
+}
+
 function Explosion() {
 	audio2.play();
+	  document.body.style.backgroundColor = "#f3f3f3";
+	  document.body.style.backgroundImage = "url('images/explosion.png')";
+	  document.body.style.backgroundRepeat = "no-repeat";
+	  document.body.style.backgroundAttachment = "fixed";
+	  document.body.style.backgroundPosition="center center"; 
 }
 }
 
